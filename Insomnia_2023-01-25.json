@@ -1,1 +1,184 @@
-{"_type":"export","__export_format":4,"__export_date":"2023-01-25T13:48:39.778Z","__export_source":"insomnia.desktop.app:v2022.7.2","resources":[{"_id":"req_d4b6e59318ed4ebda3aa6c5ba232ad0e","parentId":"wrk_adcdf27870134e79bae070d5a8e969e7","modified":1673774108262,"created":1673773766234,"url":"127.0.0.1:5000/store/My Store/item","name":"/store/<store name>/item Create New Item","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"name\": \"Table\",\n\t\"price\": \"15.99\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1673773766234,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"wrk_adcdf27870134e79bae070d5a8e969e7","parentId":null,"modified":1673770876164,"created":1673770876164,"name":"New Document","description":"","scope":"design","_type":"workspace"},{"_id":"req_d7647abafed7416db04d95b9191d0ca0","parentId":"wrk_adcdf27870134e79bae070d5a8e969e7","modified":1673773723978,"created":1673773493341,"url":"127.0.0.1:5000/store/My Store","name":"/store/<store name> Get Store","description":"","method":"GET","body":{},"parameters":[],"headers":[],"authentication":{},"metaSortKey":-1673773493341,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_27af3917382c4ddcb20bdc731068e966","parentId":"wrk_adcdf27870134e79bae070d5a8e969e7","modified":1673773275631,"created":1673771145752,"url":"127.0.0.1:5000/store","name":"/store Create New Store","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"name\": \"My Store\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1673771145752,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_ee6a7f1fc3ee4fc2aa144a9af5b56d49","parentId":"wrk_adcdf27870134e79bae070d5a8e969e7","modified":1673773283949,"created":1673770876173,"url":"127.0.0.1:5000/store","name":"/store Get All Stores","description":"","method":"GET","body":{},"parameters":[],"headers":[],"authentication":{},"metaSortKey":-1673770876173,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"env_bc659e0896fc8dfd71d0c4737ce452fa9e18d2a8","parentId":"wrk_adcdf27870134e79bae070d5a8e969e7","modified":1673770876169,"created":1673770876169,"name":"Base Environment","data":{},"dataPropertyOrder":null,"color":null,"isPrivate":false,"metaSortKey":1673770876169,"_type":"environment"},{"_id":"jar_bc659e0896fc8dfd71d0c4737ce452fa9e18d2a8","parentId":"wrk_adcdf27870134e79bae070d5a8e969e7","modified":1673770876170,"created":1673770876170,"name":"Default Jar","cookies":[],"_type":"cookie_jar"},{"_id":"spc_8b090be0197e44f8b908ca0ca0e6e9b8","parentId":"wrk_adcdf27870134e79bae070d5a8e969e7","modified":1674654427228,"created":1673770876165,"fileName":"SimpleStore","contents":"","contentType":"yaml","_type":"api_spec"},{"_id":"uts_ae471af5fb77417195f052295258936b","parentId":"wrk_adcdf27870134e79bae070d5a8e969e7","modified":1673770876175,"created":1673770876175,"name":"Example Test Suite","_type":"unit_test_suite"},{"_id":"uts_8a67b50ab9b848f8a56eab15ea29943f","parentId":"wrk_adcdf27870134e79bae070d5a8e969e7","modified":1673770918536,"created":1673770918536,"name":"Simple Store Flask API with Jose","_type":"unit_test_suite"},{"_id":"ut_64624fccc0864900987030b3ebbf5940","parentId":"uts_8a67b50ab9b848f8a56eab15ea29943f","modified":1673771085363,"created":1673771040721,"requestId":"req_ee6a7f1fc3ee4fc2aa144a9af5b56d49","name":"Get all stores","code":"const response1 = await insomnia.send();\nexpect(response1.status).to.equal(200);","_type":"unit_test"}]}
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-01-25T13:48:39.778Z",
+  "__export_source": "insomnia.desktop.app:v2022.7.2",
+  "resources": [
+    {
+      "_id": "req_d4b6e59318ed4ebda3aa6c5ba232ad0e",
+      "parentId": "wrk_adcdf27870134e79bae070d5a8e969e7",
+      "modified": 1673774108262,
+      "created": 1673773766234,
+      "url": "127.0.0.1:5000/store/My Store/item",
+      "name": "/store/<store name>/item Create New Item",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Table\",\n\t\"price\": \"15.99\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1673773766234,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_adcdf27870134e79bae070d5a8e969e7",
+      "parentId": null,
+      "modified": 1673770876164,
+      "created": 1673770876164,
+      "name": "New Document",
+      "description": "",
+      "scope": "design",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_d7647abafed7416db04d95b9191d0ca0",
+      "parentId": "wrk_adcdf27870134e79bae070d5a8e969e7",
+      "modified": 1673773723978,
+      "created": 1673773493341,
+      "url": "127.0.0.1:5000/store/My Store",
+      "name": "/store/<store name> Get Store",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1673773493341,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_27af3917382c4ddcb20bdc731068e966",
+      "parentId": "wrk_adcdf27870134e79bae070d5a8e969e7",
+      "modified": 1673773275631,
+      "created": 1673771145752,
+      "url": "127.0.0.1:5000/store",
+      "name": "/store Create New Store",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"My Store\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1673771145752,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ee6a7f1fc3ee4fc2aa144a9af5b56d49",
+      "parentId": "wrk_adcdf27870134e79bae070d5a8e969e7",
+      "modified": 1673773283949,
+      "created": 1673770876173,
+      "url": "127.0.0.1:5000/store",
+      "name": "/store Get All Stores",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1673770876173,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_bc659e0896fc8dfd71d0c4737ce452fa9e18d2a8",
+      "parentId": "wrk_adcdf27870134e79bae070d5a8e969e7",
+      "modified": 1673770876169,
+      "created": 1673770876169,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1673770876169,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_bc659e0896fc8dfd71d0c4737ce452fa9e18d2a8",
+      "parentId": "wrk_adcdf27870134e79bae070d5a8e969e7",
+      "modified": 1673770876170,
+      "created": 1673770876170,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_8b090be0197e44f8b908ca0ca0e6e9b8",
+      "parentId": "wrk_adcdf27870134e79bae070d5a8e969e7",
+      "modified": 1674654427228,
+      "created": 1673770876165,
+      "fileName": "SimpleStore",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "uts_ae471af5fb77417195f052295258936b",
+      "parentId": "wrk_adcdf27870134e79bae070d5a8e969e7",
+      "modified": 1673770876175,
+      "created": 1673770876175,
+      "name": "Example Test Suite",
+      "_type": "unit_test_suite"
+    },
+    {
+      "_id": "uts_8a67b50ab9b848f8a56eab15ea29943f",
+      "parentId": "wrk_adcdf27870134e79bae070d5a8e969e7",
+      "modified": 1673770918536,
+      "created": 1673770918536,
+      "name": "Simple Store Flask API with Jose",
+      "_type": "unit_test_suite"
+    },
+    {
+      "_id": "ut_64624fccc0864900987030b3ebbf5940",
+      "parentId": "uts_8a67b50ab9b848f8a56eab15ea29943f",
+      "modified": 1673771085363,
+      "created": 1673771040721,
+      "requestId": "req_ee6a7f1fc3ee4fc2aa144a9af5b56d49",
+      "name": "Get all stores",
+      "code": "const response1 = await insomnia.send();\nexpect(response1.status).to.equal(200);",
+      "_type": "unit_test"
+    }
+  ]
+}
