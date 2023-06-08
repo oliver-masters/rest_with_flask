@@ -32,7 +32,6 @@ RUN pip install poethepoet
 RUN poetry config virtualenvs.create false
 RUN poetry install --no-dev
 COPY /src src
-COPY run.py run.py
 CMD ["poetry", "run", "poe", "app"]
 ```
 #### Run (Mounted)
@@ -51,6 +50,5 @@ RUN pip install poetry
 RUN pip install poethepoet
 RUN poetry config virtualenvs.create false
 RUN poetry install --no-dev
-COPY run.py /rest_with_flask/run.py
 CMD ["poetry", "run", "poe", "app"]
 ```
