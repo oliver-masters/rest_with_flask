@@ -25,7 +25,7 @@ class Item(MethodView):
     @blp.arguments(ItemUpdatesSchema)
     @blp.response(200, ItemSchema)
     def put(self, item_data, item_id):
-        item = ItemModel.query.get_or_404(item_id)
+        item = ItemModel.query.get(item_id)
 
         if item:
             item.price = item_data["price"]
