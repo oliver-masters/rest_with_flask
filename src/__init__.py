@@ -3,7 +3,6 @@ from flask_smorest import Api
 import os
 
 from src.db import db
-import src.models
 
 from src.resources.item import blp as ItemBlueprint
 from src.resources.store import blp as StoreBlueprint

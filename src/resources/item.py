@@ -4,9 +4,9 @@ from sqlalchemy.exc import SQLAlchemyError
 
 from src.db import db
 from src.models import ItemModel
-from src.schemas import ItemSchema, ItemUpdatesSchema
+from src.schemas import ItemSchema, ItemUpdateSchema
 
-blp = Blueprint("Items", __name__, description="Operations on items")
+blp = Blueprint("Items", "items", description="Operations on items")
 
 
 @blp.route("/item/<string:item_id>")
@@ -22,7 +22,7 @@ class Item(MethodView):
         db.session.commit()
         return {"message": "Item deleted."}
 
-    @blp.arguments(ItemUpdatesSchema)
+    @blp.arguments(ItemUpdateSchema)
     @blp.response(200, ItemSchema)
     def put(self, item_data, item_id):
         item = ItemModel.query.get(item_id)
